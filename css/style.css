@@ -1,0 +1,103 @@
+body {
+    max-width: 62rem;
+    margin: 0px 8.5rem;
+    font-family: "Mulish";
+}
+
+:root {
+    --header-color: rgb(255, 255, 255)
+}
+/* ********  banner-section star  ********* */
+
+.banner-container {
+    background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    height: 31rem;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner-title {
+    color: var(--header-color);
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 6rem;
+    margin: 0;
+}
+
+
+.banner-discription {
+    color: var(--header-color);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1.5rem 15rem 3rem 15rem;
+}
+
+.input-fild {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 3rem;
+    gap: 2rem;
+
+}
+
+.input-fild input,
+.travel {
+    width: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    gap: 2rem;
+    border-radius: 0.5rem;
+}
+
+#travel-search {
+    border-radius: 8px;
+    background-color: rgb(255, 84, 0);
+    color: var(--header-color);
+}
+/* ********  banner-section end  ********* */
+
+
+
+
+/* ***************responsive *************/
+
+/* ***************** small device  *********** */
+
+@media screen and (max-width:600px) {
+
+
+    .banner-title {
+        color: var(--header-color);
+        font-size: 1.5rem;
+        font-weight: 800;
+        padding-top: 3rem;
+    }
+
+    .banner-discription {
+        color: var(--header-color);
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0;
+
+    }
+
+    .input-fild input,
+    .travel {
+        width: 8rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        border: none;
+        border-radius: 0.5rem;
+    }
+
+    .input-fild {
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin: 0 3rem;
+
+    }
+}
