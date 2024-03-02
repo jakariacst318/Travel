@@ -18,6 +18,7 @@ body {
     font-weight: 800;
     border: none;
     padding: 1rem 2rem;
+    cursor: pointer;
 }
 
 /* ********  banner-section star  ********* */
@@ -70,6 +71,7 @@ body {
     border-radius: 8px;
     background-color: rgb(255, 84, 0);
     color: var(--header-color);
+    cursor: pointer;
 }
 
 /* ********  banner-section end  ********* */
@@ -106,9 +108,118 @@ ul>li {
     font-weight: 400;
     padding: 0.5rem 0;
 }
+
 /* ********Our Popular Tours section end ******* */
 
+/* location choose section start */
+.choose-list {
+    text-align: center;
+}
 
+.choose-list h2 {
+    color: var(--tour-title-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.choose-list p {
+    color: var(--tour-description-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.choose-container {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 20px;
+
+}
+
+.choose-location-best-price {
+    margin: 0 8rem;
+
+}
+
+.choose-location-hotel img,
+.choose-location-location img,
+.choose-location-best-price img {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 2rem;
+}
+
+.choose-location-hotel,
+.choose-location-location,
+.choose-location-best-price {
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background-color: rgba(251, 181, 99, 0.05);
+    padding-left: 2rem;
+}
+
+.choose-header {
+    color: var(--tour-title-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.choose-description {
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+/* news Letter section */
+.news-letter {
+    display: flex;
+    gap: 3rem;
+    padding: 6rem 0;
+}
+
+.news-letter-container {
+    border: 2px solid rgb(255, 84, 0);
+    border-radius: 10px;
+    width: 49rem;
+    padding: 0.5rem 3rem 0 1rem;
+}
+
+.news-letter-container input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: none;
+}
+
+#subscribe-btn {
+    padding: 0 auto;
+    width: 100%;
+}
+
+.news-letter-title {
+    color: var(--tour-title-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0px;
+    padding-top: 2.5rem;
+    /* padding-left: 2.5rem; */
+}
+
+.news-letter-description {
+    color: var(--tour-description-color);
+    font-size: 1rem;
+    font-weight: 400;
+    /* padding-left: 2.5rem */
+}
+
+.news-letter-img img {
+    width: 42rem;
+    height: 26rem;
+}
+
+/* location choose section end */
 
 /* ***************responsive *************/
 
@@ -147,7 +258,8 @@ ul>li {
         margin: 0 3rem;
 
     }
-/* ********Our Popular Tours responsive ******* */
+
+    /* ********Our Popular Tours responsive ******* */
 
     .popular-tour-container {
         flex-direction: column;
@@ -165,4 +277,49 @@ ul>li {
         width: 100%;
     }
 
+    /* choose section  */
+    .choose-container {
+        flex-direction: column;
+
+    }
+
+    .choose-list h2 {
+        font-size: 2rem;
+    }
+
+    .choose-location-best-price {
+        margin: 0 0.2rem;
+
+    }
+
+    .news-letter-container {
+        height: 23rem;
+        width: 80%;
+    }
+
+    #subscribe-btn {
+        padding: 1 auto;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    /*  */
+    .news-letter-container input {
+        display: block;
+        padding: 1rem;
+        margin: 0px;
+        border: none;
+
+    }
+
+    .news-letter-img img {
+        width: 26rem;
+        height: 26rem;
+    }
+
+    /* news-letter */
+    .news-letter {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
