@@ -1,5 +1,5 @@
 body {
-    max-width: 62rem;
+    /* max-width: 62rem; */
     margin: 0px 8.5rem;
     font-family: "Mulish";
 }
@@ -21,12 +21,49 @@ body {
     cursor: pointer;
 }
 
+/* header section start */
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-title{
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.header-link li {
+    padding-left: 2.5rem;
+    color: rgb(66, 66, 71);
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+
+
+
+
+/* header section end */
+
 /* ********  banner-section star  ********* */
 
 .banner-container {
     background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
     background-repeat: no-repeat;
     height: 31rem;
+    border-radius: 10px;
 }
 
 .banner {
@@ -478,6 +515,7 @@ ul li {
 /* footer section  start*/
 .travel-span {
     color: rgb(255, 84, 0);
+    font-weight: 800;
 }
 
 .footer-logo {
@@ -528,8 +566,6 @@ ul li {
 /* ***************** small device  *********** */
 
 @media screen and (max-width:600px) {
-
-
     .banner-title {
         color: var(--header-color);
         font-size: 1.5rem;
@@ -695,6 +731,7 @@ ul li {
         margin-top: -10.25rem;
         margin-left: 7rem;
     }
+
     /*  Tour Packages bonus     */
 
     .tour-packages {
